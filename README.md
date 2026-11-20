@@ -23,6 +23,7 @@
    git clone https://github.com/ВАШ_НИК/chitai-gorod-tests.git
    cd chitai-gorod-tests   
 2. Запуск тестов:
+   
     Все тесты: pytest
    
     Только UI тесты: pytest -m "ui"
