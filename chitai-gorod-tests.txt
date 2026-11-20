@@ -1,0 +1,41 @@
+chitai-gorod-tests/
+├── .env
+├── .gitignore
+├── conftest.py
+├── pytest.ini
+├── requirements.txt
+├── README.md
+├── pages/
+│   ├── __init__.py
+│   ├── base_page.py
+│   ├── main_page.py
+│   └── product_page.py
+└── tests/
+    ├── __init__.py
+    ├── api/
+    │   ├── __init__.py
+    │   └── test_api_chitai_gorod.py
+    └── ui/
+        ├── __init__.py
+        └── test_ui_chitai_gorod.py
+
+Создайте и активируйте виртуальное окружение:
+   python -m venv venv
+   source venv/bin/activate  # Для Windows: venv\Scripts\activate
+
+Установите зависимости и браузеры Playwright
+   pip install -r requirements.txt
+   playwright install chromium
+
+
+Запуск тестов:
+Все тесты: pytest
+Только UI тесты: pytest -m "ui"
+Только API тесты: pytest -m "api"
+С формированием отчета Allure: pytest --alluredir=allure-results
+Просмотр отчета Allure: allure serve allure-results
+
+Иногда pytest кэширует старые данные, которые могут мешать:
+pytest --cache-clear
+
+
