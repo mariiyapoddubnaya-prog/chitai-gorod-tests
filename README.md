@@ -21,12 +21,11 @@
 
 1. Клонируйте репозиторий и перейдите в папку проекта:
    git clone https://github.com/ВАШ_НИК/chitai-gorod-tests.git
-   cd chitai-gorod-tests
-   
-2.Запуск тестов:
-   Все тесты: pytest
-   Только UI тесты: pytest -m "ui"
-   Только API тесты: pytest -m "api"
-   С формированием отчета Allure: pytest --alluredir=allure-results
-   Просмотр отчета Allure: allure serve allure-results
+   cd chitai-gorod-tests   
+2. Запуск тестов:
+    Все тесты: pytest
+    Только UI тесты: pytest -m "ui"
+    Только API тесты: pytest -m "api"
+    С формированием отчета Allure: pytest --alluredir=allure-results
+    Просмотр отчета Allure: allure serve allure-results
    
